@@ -1,0 +1,6 @@
+{
+  "name": "Munch & Yum Catering",
+  "description": "Unforgettable Flavors for Your Special Moments. Bespoke catering for weddings, corporate events, private celebrations, and custom meal delivery by Chef Kabura Karanja.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
