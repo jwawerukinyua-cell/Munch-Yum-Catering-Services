@@ -105,7 +105,7 @@ Could we discuss this customized menu and check availability?`;
   };
 
   return (
-    <section id="estimator" className="py-24 bg-stone-950 relative border-y border-stone-800/80">
+    <section id="estimator" className="py-24 bg-stone-950 relative border-y border-stone-800/80 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -172,7 +172,7 @@ Could we discuss this customized menu and check availability?`;
               />
 
               {/* Presets */}
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 {[30, 75, 150, 250, 400].map((preset) => (
                   <button
                     key={preset}

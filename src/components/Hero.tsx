@@ -12,40 +12,40 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreMenu })
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center pt-24 pb-16 overflow-hidden">
       {/* Background Hero Image with Appetizing Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <img
           src={CATERING_IMAGES.hero}
           alt="Lavish catering banquet feast by Munch & Yum Catering"
-          className="w-full h-full object-cover object-center transform scale-105 animate-fade-in"
+          className="w-full h-full object-cover object-center animate-fade-in"
         />
-        {/* Multi-layered cinematic gradient for deep contrast and text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-stone-950/95 via-stone-950/85 to-stone-950/65" />
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-transparent to-stone-950/70" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent" />
+        {/* Multi-layered cinematic gradient for deep contrast and crisp text readability */}
+        <div className="absolute inset-0 bg-stone-950/85 sm:bg-stone-950/80 lg:bg-gradient-to-r lg:from-stone-950/98 lg:via-stone-950/90 lg:to-stone-950/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-transparent to-stone-950/80" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/30 via-transparent to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           {/* Left Column: Compelling Pitch & Dual CTAs */}
-          <div className="lg:col-span-8 space-y-6">
+          <div className="lg:col-span-8 space-y-6 max-w-full">
             {/* Main Headline */}
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1]">
+            <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.15] break-words">
               Unforgettable Flavors for Your{' '}
-              <span className="bg-gradient-to-r from-amber-400 via-orange-400 to-amber-200 bg-clip-text text-transparent">
+              <span className="text-amber-400 font-bold block sm:inline">
                 Special Moments
               </span>
             </h1>
 
             {/* Subheadline */}
-            <p className="text-base sm:text-lg md:text-xl text-stone-300 max-w-2xl font-light leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-stone-200 sm:text-stone-300 max-w-2xl font-light leading-relaxed">
               From majestic wedding banquets and high-stakes corporate galas to lively private milestones. Executive Chef Kabura Karanja crafts custom culinary experiences with farm-fresh ingredients, sizzle, and heart.
             </p>
 
             {/* High-Converting Action CTAs */}
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 max-w-full">
               <button
                 onClick={onOpenConsultation}
-                className="flex items-center justify-center gap-3 px-7 py-4 rounded-xl text-base font-bold text-white bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 shadow-xl shadow-orange-900/40 transform hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer group"
+                className="flex items-center justify-center gap-3 px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl text-base font-bold text-white bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 shadow-xl shadow-orange-900/40 transform hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer group"
               >
                 <span>Request a Free Quote</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -53,7 +53,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreMenu })
 
               <a
                 href={`tel:${BUSINESS_INFO.phone}`}
-                className="flex items-center justify-center gap-3 px-6 py-4 rounded-xl text-base font-semibold text-stone-100 bg-stone-900/90 hover:bg-stone-800 border border-stone-700/80 shadow-lg hover:border-amber-500/50 transition-all group"
+                className="flex items-center justify-center gap-3 px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl text-base font-semibold text-stone-100 bg-stone-900/90 hover:bg-stone-800 border border-stone-700/80 shadow-lg hover:border-amber-500/50 transition-all group"
               >
                 <Phone className="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" />
                 <span>Call {BUSINESS_INFO.phoneFormatted}</span>
@@ -63,7 +63,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreMenu })
                 href={BUSINESS_INFO.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-5 py-4 rounded-xl text-sm font-semibold text-emerald-300 bg-emerald-950/60 hover:bg-emerald-900/80 border border-emerald-700/50 transition-all"
+                className="flex items-center justify-center gap-2 px-5 py-3.5 sm:py-4 rounded-xl text-sm font-semibold text-emerald-300 bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-700/60 transition-all"
                 title="Chat on WhatsApp"
               >
                 <MessageCircle className="w-4 h-4 text-emerald-400" />
@@ -72,22 +72,22 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreMenu })
             </div>
 
             {/* Proof Badges & Quick Highlights */}
-            <div className="pt-6 border-t border-stone-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4">
-              <div className="flex items-center gap-2 text-stone-300">
+            <div className="pt-6 border-t border-stone-800/80 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-full">
+              <div className="flex items-center gap-2 text-stone-300 min-w-0">
                 <CheckCircle className="w-4 h-4 text-amber-400 shrink-0" />
-                <span className="text-xs sm:text-sm font-medium">5.0 Rated by Guests</span>
+                <span className="text-[11px] sm:text-xs md:text-sm font-medium leading-tight">5.0 Rated by Guests</span>
               </div>
-              <div className="flex items-center gap-2 text-stone-300">
+              <div className="flex items-center gap-2 text-stone-300 min-w-0">
                 <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
-                <span className="text-xs sm:text-sm font-medium">100% Fresh Local Prep</span>
+                <span className="text-[11px] sm:text-xs md:text-sm font-medium leading-tight">100% Fresh Local Prep</span>
               </div>
-              <div className="flex items-center gap-2 text-stone-300">
+              <div className="flex items-center gap-2 text-stone-300 min-w-0">
                 <Clock className="w-4 h-4 text-amber-400 shrink-0" />
-                <span className="text-xs sm:text-sm font-medium">Punctual & Stress-Free</span>
+                <span className="text-[11px] sm:text-xs md:text-sm font-medium leading-tight">Punctual & Stress-Free</span>
               </div>
-              <div className="flex items-center gap-2 text-stone-300">
+              <div className="flex items-center gap-2 text-stone-300 min-w-0">
                 <Award className="w-4 h-4 text-amber-400 shrink-0" />
-                <span className="text-xs sm:text-sm font-medium">500+ Events Catered</span>
+                <span className="text-[11px] sm:text-xs md:text-sm font-medium leading-tight">500+ Events Catered</span>
               </div>
             </div>
           </div>

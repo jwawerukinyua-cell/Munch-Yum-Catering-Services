@@ -8,7 +8,7 @@ interface ServicesSectionProps {
 
 export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectService }) => {
   return (
-    <section id="services" className="py-24 bg-stone-950 relative border-t border-stone-800/80">
+    <section id="services" className="py-24 bg-stone-950 relative border-t border-stone-800/80 overflow-hidden">
       {/* Subtle ambient lighting */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-600/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-96 h-96 bg-orange-600/10 rounded-full blur-3xl pointer-events-none" />

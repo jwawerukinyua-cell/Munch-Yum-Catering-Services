@@ -4,7 +4,7 @@ import { TESTIMONIALS, Testimonial } from '../data/cateringData';
 
 export const TestimonialsSection: React.FC = () => {
   return (
-    <section id="testimonials" className="py-24 bg-stone-950 relative border-t border-stone-800/80">
+    <section id="testimonials" className="py-24 bg-stone-950 relative border-t border-stone-800/80 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">

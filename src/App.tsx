@@ -48,7 +48,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#121110] text-stone-100 flex flex-col font-sans selection:bg-amber-500 selection:text-stone-950">
+    <div className="min-h-screen bg-[#121110] text-stone-100 flex flex-col font-sans selection:bg-amber-500 selection:text-stone-950 overflow-x-clip w-full max-w-full">
       {/* Sticky Top Navigation */}
       <Navbar onOpenConsultation={handleOpenConsultation} />
 

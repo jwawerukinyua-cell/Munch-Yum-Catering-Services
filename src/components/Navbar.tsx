@@ -36,14 +36,29 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4">
+          {/* Brand Logo & Name */}
+          <a href="#" className="flex items-center gap-2.5 shrink-0 group">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-white shadow-md shadow-orange-950/40 group-hover:scale-105 transition-transform">
+              <span className="font-serif font-black text-sm tracking-tight">M&Y</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="font-serif text-base sm:text-lg font-bold tracking-tight text-white group-hover:text-amber-400 transition-colors leading-tight">
+                Munch & Yum
+              </span>
+              <span className="text-[10px] text-amber-400 font-medium tracking-wider uppercase">
+                Catering · Nairobi
+              </span>
+            </div>
+          </a>
+
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-7">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-7">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-stone-300 hover:text-amber-400 transition-colors tracking-wide"
+                className="text-sm font-medium text-stone-300 hover:text-amber-400 transition-colors tracking-wide whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -51,7 +66,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
           </nav>
 
           {/* Action CTAs: Direct Call & Consultation */}
-          <div className="hidden sm:flex items-center gap-3">
+          <div className="hidden sm:flex items-center gap-3 shrink-0">
             <a
               href={`tel:${BUSINESS_INFO.phone}`}
               className="flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-semibold text-stone-200 bg-stone-900/80 hover:bg-stone-800 border border-stone-700/60 transition-colors"
@@ -70,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex sm:hidden items-center gap-2 ml-auto">
+          <div className="flex sm:hidden items-center gap-2 shrink-0">
             <a
               href={`tel:${BUSINESS_INFO.phone}`}
               className="p-2 rounded-lg bg-orange-600 text-white shadow"

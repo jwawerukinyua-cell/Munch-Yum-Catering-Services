@@ -28,7 +28,7 @@ export const AboutFounder: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-stone-900/70 relative">
+    <section id="about" className="py-24 bg-stone-900/70 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Founder Image with Decorative Framing */}

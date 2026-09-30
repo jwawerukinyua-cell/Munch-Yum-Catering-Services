@@ -10,7 +10,7 @@ export const FAQSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-24 bg-stone-900/60 relative border-t border-stone-800/80">
+    <section id="faq" className="py-24 bg-stone-900/60 relative border-t border-stone-800/80 overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
