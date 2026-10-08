@@ -52,6 +52,13 @@ export const BUSINESS_INFO = {
     facebook: 'https://www.facebook.com/profile.php?id=61558447504705',
     tiktok: 'https://www.tiktok.com/@munch.yum.catering',
   },
+  featuredVideo: {
+    facebookShareUrl: 'https://www.facebook.com/share/v/1auCX6sTyH/',
+    facebookReelUrl: 'https://www.facebook.com/reel/2422389198295578/',
+    embedUrl: 'https://www.facebook.com/plugins/video.php?height=580&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2422389198295578%2F&show_text=false&width=330&t=0',
+    title: 'Chef Kabura & Team Catering Live in Action',
+    caption: 'Experience the sizzle, elegance, and vibrant energy of a real Munch & Yum catering feast in Nairobi.',
+  },
   founder: {
     name: 'Kabura Karanja',
     title: 'Founder & Executive Chef',

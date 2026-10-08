@@ -21,6 +21,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
   const navLinks = [
     { label: 'Services', href: '#services' },
     { label: 'Menu Highlights', href: '#menu' },
+    { label: 'Live Video', href: '#video' },
     { label: 'Custom Estimator', href: '#estimator' },
     { label: 'About Chef Kabura', href: '#about' },
     { label: 'Testimonials', href: '#testimonials' },

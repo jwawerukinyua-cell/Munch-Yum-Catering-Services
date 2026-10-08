@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, ShieldCheck, Clock, Award, Phone, MessageCircle } from 'lucide-react';
+import { Heart, ShieldCheck, Clock, Award, Phone, MessageCircle, Play } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/cateringData';
 import { CATERING_IMAGES } from '../assets/images';
 
@@ -111,6 +111,14 @@ export const AboutFounder: React.FC = () => {
               >
                 <Phone className="w-4 h-4 text-amber-400" />
                 <span>Call {BUSINESS_INFO.phoneFormatted}</span>
+              </a>
+
+              <a
+                href="#video"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-amber-950/70 hover:bg-amber-900/90 text-amber-300 border border-amber-600/50 text-sm font-semibold transition"
+              >
+                <Play className="w-4 h-4 text-amber-400 fill-amber-400" />
+                <span>Watch Live Reel</span>
               </a>
             </div>
           </div>

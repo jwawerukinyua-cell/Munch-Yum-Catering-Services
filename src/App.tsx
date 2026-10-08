@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ServicesSection } from './components/ServicesSection';
 import { MenuHighlights } from './components/MenuHighlights';
+import { LiveEventVideo } from './components/LiveEventVideo';
 import { QuoteCalculator } from './components/QuoteCalculator';
 import { AboutFounder } from './components/AboutFounder';
 import { TestimonialsSection } from './components/TestimonialsSection';
@@ -65,7 +66,10 @@ export default function App() {
         {/* 3. Menu Highlights / Interactive Gallery Grid */}
         <MenuHighlights onOpenConsultation={handleOpenConsultation} />
 
-        {/* 4. Interactive Custom Quote & Menu Estimator */}
+        {/* 4. Live Event Video Reel Spotlight */}
+        <LiveEventVideo onOpenConsultation={handleOpenConsultation} />
+
+        {/* 5. Interactive Custom Quote & Menu Estimator */}
         <QuoteCalculator
           onOpenConsultationWithData={handleOpenConsultationWithData}
         />
